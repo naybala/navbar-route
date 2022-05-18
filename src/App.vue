@@ -3,7 +3,7 @@
 		<!-- Header -->
 		<Header />
 		<!-- Content -->
-		<!-- <router-view /> -->
+		<router-view />
 	</div>
 </template>
 

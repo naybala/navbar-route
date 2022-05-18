@@ -7,12 +7,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
-                </li>
+                <router-link to="/" class="button">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page">Home</a>
+                    </li>
+                </router-link>
+                 <router-link to="/about" class="button">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page">About</a>
+                    </li>
+                </router-link>
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -22,3 +26,15 @@
         </div>
     </nav>
 </template>
+
+<script>
+</script>
+
+<style>
+li .active{
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+}
+</style>
